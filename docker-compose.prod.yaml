@@ -14,7 +14,7 @@ services:
       - ./letsencrypt:/etc/letsencrypt
       - ./nginx:/etc/nginx
       - ./www:/var/www
-      - ./logs:/var/log
+      - ./logs:/var/log/nginx
     # networks:
     #   - ${DOCKER_VPN}
 
