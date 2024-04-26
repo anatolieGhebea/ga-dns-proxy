@@ -1,0 +1,2 @@
+To enable a configuration from this folder, copy the configuration to the `../conf.d/` folder. This folder is just a quick reference collections.
+This folder in not mounted by default into the nginx container.

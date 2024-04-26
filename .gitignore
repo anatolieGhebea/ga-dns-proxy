@@ -1,0 +1,9 @@
+/letsencrypt/*
+!/letsencrypt/*.meta
+
+/logs/*
+!/logs/*.meta
+
+/portainer/*
+!/portainer/*.meta
+

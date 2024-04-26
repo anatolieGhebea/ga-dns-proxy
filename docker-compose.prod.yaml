@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  proxy:
+    container_name: proxy
+    image: nginx:1.26.0
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      - TZ=Europe/Rome
+    volumes:
+      - ./letsencrypt:/etc/letsencrypt
+      - ./nginx:/etc/nginx
+      - ./www:/var/www
+      - ./logs:/var/log
+    networks:
+      - ${DOCKER_VPN}
+
+networks:
+  default:
+    external:
+      name: ${DOCKER_VPN}
