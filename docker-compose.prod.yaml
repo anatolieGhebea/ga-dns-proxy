@@ -15,8 +15,8 @@ services:
       - ./nginx:/etc/nginx
       - ./www:/var/www
       - ./logs:/var/log
-    networks:
-      - ${DOCKER_VPN}
+    # networks:
+    #   - ${DOCKER_VPN}
 
 networks:
   default:
